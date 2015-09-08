@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fra"
+        android:background="#EEEEEE"
+        android:layout_above="@+id/bottomlinearlayout">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="com.eg.ccw.wechat.fragment.Main_Frg"
+
+            android:id="@+id/weixinfrg"
+            />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/bottomlinearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:textColor="#45C01A"
+            android:id="@+id/weixin"
+            android:drawableTop="@drawable/ami"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            android:gravity="center"
+            android:id="@+id/tongxunlu"
+            android:drawableTop="@drawable/amg"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:id="@+id/find"
+            android:drawableTop="@drawable/amo"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我"
+            android:id="@+id/me"
+            android:drawableTop="@drawable/ams"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

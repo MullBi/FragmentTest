@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_120"
+            android:id="@+id/item_weixin_img"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是昵称~~~~~~~~~~"
+            android:textColor="#000000"
+            android:textSize="20sp"
+
+            android:id="@+id/item_weixin_nickname"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/item_weixin_img"
+            android:layout_toEndOf="@+id/item_weixin_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是时间~"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_weixin_time"
+            android:textColor="#cccccc"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="我是聊天测试内容~~~~~~~~~~~~~~~~"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:id="@+id/item_weixin_chatcontent"
+            android:textColor="#999999"
+            android:singleLine="true"
+            android:layout_below="@+id/item_weixin_nickname"
+            android:layout_toRightOf="@+id/item_weixin_img"
+            android:layout_toEndOf="@+id/item_weixin_img" />
+    </RelativeLayout>
+
+</LinearLayout>
